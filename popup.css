@@ -1,0 +1,47 @@
+body {
+	background-color: whitesmoke;
+	width: 750px;
+	height: 100px;
+}
+
+#title {
+	color: whitesmoke;
+	background-color: green;
+	text-align: center;
+}
+
+#btnSync {
+	margin: 0 auto;
+}
+
+#links {
+	table-layout: fixed;
+	width: 100%;
+}
+
+#links {
+	height: 1em;
+}
+
+#links td {
+	text-align: center;
+	border: 1px solid darkgrey;
+	width: 250px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.btn-success {
+	display: inline-block;
+	width: 100%;
+	height: 150%;
+}
+
+.btn-success:hover {
+	background-color: #d9534f;
+}
+
+.navbar-right {
+	float: right;
+	margin-top: 7.5px;
+}
