@@ -4,20 +4,22 @@
 	"version": "0.1",
 	"permissions": [
 	  "contextMenus",
-	  "storage",
 	  "identity",
 	  "identity.email"
 	],
+	"host_permissions": [
+		"http://localhost:3000/graphql"
+	],
 	"background": { 
-	  "service_worker": "main.js"
+	  "service_worker": "background.js"
 	},
 	"icons": {
-		"16": "icon16.png",
-		"48": "icon48.png",
-		"128": "icon128.png"
+		"16": "public/img/icon16.png",
+		"48": "public/img/icon48.png",
+		"128": "public/img/icon128.png"
 	},
 	"action": {
-		"default_icon": "icon16.png",
+		"default_icon": "public/img/icon16.png",
 		"default_popup": "popup.html"
 	},
 	"content_security_policy": {

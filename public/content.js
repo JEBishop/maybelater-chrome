@@ -1,9 +1,4 @@
-htmlString = "";
 document.addEventListener('DOMContentLoaded', function () {
-	//var bg = chrome.extension.getBackgroundPage();
-	//var myURL = bg.url;
-	//var htmlS = bg.htmlString;
-	//$('#tablebody').after(htmlS);
 	
 	function updateTable() {
 		for(var i = 0; i < localStorage.length; i++) {
@@ -12,13 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#tablebody").after('<tr><td>' + key + '</td><td><a href="' + val + '">' + val + '</a></td><td><input id="btnDelete" type="button" class="btn btn-success" value="Delete"/></td></tr>');
 		}		
 	}
-
-	// do this to find user ID
-
-	//chrome.identity.getProfileUserInfo((userInfo) => {
-	//	var email = userInfo.email;
-	//	var userId = userInfo.id;
-	//});
 	
 	updateTable();
 	
